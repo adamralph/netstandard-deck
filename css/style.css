@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-BoldItalic.ttf');
+  font-weight: bold;
+  font-style: italic;
+}
+
+table {
+  color: #eee;
+}
+
+.reveal {
+  font-family: 'Lato';
+}
+
+.reveal section img {
+  border: none;
+  background: inherit;
+  max-height: 576px;
+}
+
+.reveal h1, .reveal h2 {
+  text-transform: uppercase;
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+  font-family: 'Lato';
+  letter-spacing: normal;
+  color: goldenrod;
+}
+
+.reveal blockquote {
+  color: lightskyblue;
+  background: inherit;
+  font-size: 1.5em;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+.reveal blockquote:before {
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.1em;
+  vertical-align: -0.4em;
+}
+
+.reveal blockquote:after {
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  vertical-align: -0.4em;
+}
+
+.reveal a {
+  color: dodgerblue;
+}
+
+.reveal a:hover {
+  color: lightskyblue;
+}
+
+.reveal .handle {
+  color: dodgerblue;
+  float: right;
+  font-size: 1em;
+  position: relative;
+  left: 100px;
+}
+
+.reveal .stamp {
+  color: darkred;
+  font-size: 8em;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-family: monospace;
+  font-weight: bold;
+  transform: rotate(-10deg);
+  position: relative;
+  top: -480px;
+}
+
+img.img-white-back {
+  background: white;
+}

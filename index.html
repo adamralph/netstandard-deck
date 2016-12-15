@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>What is .NET Standard?</title>
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/night.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <h1>What is .NET Standard?</h1>
+        <blockquote>It ain't your father's .NET!</blockquote>
+        <h3>Adam Ralph</h3>
+        <p>adam@adamralph.com · @adamralph (Twitter, GitHub, etc.)</p>
+        <p><a href="https://github.com/adamralph/netstandard-deck">github.com/adamralph/netstandard-deck</a></p>
+      </section>
+      <section>
+        <img src="img/particular.png" />
+        <img src="img/nservicebus.png" />
+      </section>
+      <section>
+        <img src="img/home.jpg" />
+      </section>
+      <section>
+        <h2>NuGet packages</h2>
+        <table>
+          <tr>
+            <td>FakeItEasy</td>
+            <td><span class="fragment" data-fragment-index="0">.NET Standard 1.6</span></td>
+          </tr>
+          <tr>
+            <td>LiteGuard</td>
+            <td><span class="fragment" data-fragment-index="1">.NET Standard 1.0</span></td>
+          </tr>
+          <tr>
+            <td>xBehave.net<span class="fragment" data-fragment-index="2"> (beta)</span></td>
+            <td><span class="fragment" data-fragment-index="3">.NET Standard 1.0</span></td>
+          </tr>
+          <tr>
+            <td>NServiceBus.RabbitMQ<span class="fragment" data-fragment-index="4"> (beta)</span></td>
+            <td><span class="fragment" data-fragment-index="5">.NET Standard 2.0</span></td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <h2>.NET Standard?</h2>
+        <h3>¯\_(ツ)_/¯</h3>
+      </section>
+      <section>
+        <h3>.NET Framework (and Mono)</h3>
+        <p class="fragment">Windows, Windows Server (and MacOS and Linux)</p>
+        <h3 class="fragment">.NET Core</h3>
+        <p class="fragment">Windows, Windows Server, Linux, MacOS, Tizen</p>
+        <h3 class="fragment">Xamarin.iOS, Xamarin.Mac</h3>
+        <p class="fragment">iPhone, iPad, MacOS (GUI)</p>
+        <h3 class="fragment">Xamarin.Android</h3>
+        <p class="fragment">All the things!</p>
+        <h3 class="fragment">UWP</h3>
+        <p class="fragment">Windows 10, Windows 10 Mobile, Xbox One, Hololens</p>
+      </section>
+      <section>
+        <h2>Portable Class Libraries</h2>
+      </section>
+      <section>
+        <h2>The Portable Class Library Fiasco</h2>
+      </section>
+      <section>
+        <img src="img/netfx.png" />
+      </section>
+      <section>
+        <img src="img/sl50.png" />
+      </section>
+      <section data-transition="convex-in none-out">
+        <img src="img/venn2-pre.png" />
+      </section>
+      <section data-transition="none-in convex-out">
+        <img src="img/venn2.png" />
+      </section>
+      <section>
+        <img src="img/venn3.png" />
+      </section>
+      <section>
+        <img src="img/euler4.png" />
+      </section>
+      <section>
+        <img src="img/euler-british-isles.png" />
+      </section>
+      <section>
+        <img src="img/euler4.png" />
+      </section>
+      <section data-transition="convex-in none-out">
+        <img src="img/venn4-template.png" />
+      </section>
+      <section data-transition="none-in convex-out">
+        <img src="img/venn4.png" />
+      </section>
+      <section>
+        <img src="img/pcl-table.png" />
+        <p><a href="http://portablelibraryprofiles.apps.stephencleary.com/">portablelibraryprofiles.apps.stephencleary.com</a></p>
+      </section>
+      <section>
+        <img src="img/venn5.png" />
+      </section>
+      <section>
+        <img src="img/venn6.png" />
+      </section>
+      <section>
+        <img src="img/venn7.png" />
+      </section>
+      <section data-transition="convex-in none-out">
+        <img src="img/venn11.png" />
+      </section>
+      <section data-transition="none-in convex-out">
+        <img src="img/venn11-fiasco.png" />
+        <p class="fragment stamp">fiasco!</p>
+      </section>
+      <section>
+        <img src="img/netstd.png" />
+      </section>
+      <section>
+        <img src="img/netstd-1.png" />
+      </section>
+      <section>
+        <img src="img/netstds.png" />
+      </section>
+      <section>
+        <table>
+          <thead>
+            <tr>
+              <th align="left">.NET Standard</th>
+              <th align="right"><a href="https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.0.md">1.0</a></th>
+              <th align="right"><a href="https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.1.md">1.1</a></th>
+              <th align="right"><a href="https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.2.md">1.2</a></th>
+              <th align="right"><a href="https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.3.md">1.3</a></th>
+              <th align="right"><a href="https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.4.md">1.4</a></th>
+              <th align="right"><a href="https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.5.md">1.5</a></th>
+              <th align="right"><a href="https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.6.md">1.6</a></th>
+              <th align="right"><a href="https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md">2.0</a></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="left">.NET Core</td>
+              <td align="right">1.0</td>
+              <td align="right">1.0</td>
+              <td align="right">1.0</td>
+              <td align="right">1.0</td>
+              <td align="right">1.0</td>
+              <td align="right">1.0</td>
+              <td align="right">1.0</td>
+              <td align="right">2.0</td>
+            </tr>
+            <tr>
+              <td align="left">.NET Framework</td>
+              <td align="right">4.5</td>
+              <td align="right">4.5</td>
+              <td align="right">4.5.1</td>
+              <td align="right">4.6</td>
+              <td align="right">4.6.1</td>
+              <td align="right">4.6.1</td>
+              <td align="right">4.6.1</td>
+              <td align="right">4.6.1</td>
+            </tr>
+            <tr>
+              <td align="left">Mono</td>
+              <td align="right">4.6</td>
+              <td align="right">4.6</td>
+              <td align="right">4.6</td>
+              <td align="right">4.6</td>
+              <td align="right">4.6</td>
+              <td align="right">4.6</td>
+              <td align="right">4.6</td>
+              <td align="right">5.4</td>
+            </tr>
+            <tr>
+              <td align="left">Xamarin.iOS</td>
+              <td align="right">10.0</td>
+              <td align="right">10.0</td>
+              <td align="right">10.0</td>
+              <td align="right">10.0</td>
+              <td align="right">10.0</td>
+              <td align="right">10.0</td>
+              <td align="right">10.0</td>
+              <td align="right">10.14</td>
+            </tr>
+            <tr>
+              <td align="left">Xamarin.Mac</td>
+              <td align="right">3.0</td>
+              <td align="right">3.0</td>
+              <td align="right">3.0</td>
+              <td align="right">3.0</td>
+              <td align="right">3.0</td>
+              <td align="right">3.0</td>
+              <td align="right">3.0</td>
+              <td align="right">3.8</td>
+            </tr>
+            <tr>
+              <td align="left">Xamarin.Android</td>
+              <td align="right">7.0</td>
+              <td align="right">7.0</td>
+              <td align="right">7.0</td>
+              <td align="right">7.0</td>
+              <td align="right">7.0</td>
+              <td align="right">7.0</td>
+              <td align="right">7.0</td>
+              <td align="right">8.0</td>
+            </tr>
+            <tr>
+              <td align="left">UWP</td>
+              <td align="right">10.0</td>
+              <td align="right">10.0</td>
+              <td align="right">10.0</td>
+              <td align="right">10.0</td>
+              <td align="right">10.0</td>
+              <td align="right">vNext</td>
+              <td align="right">vNext</td>
+              <td align="right">vNext</td>
+            </tr>
+            <tr>
+              <td align="left">Windows</td>
+              <td align="right">8.0</td>
+              <td align="right">8.0</td>
+              <td align="right">8.1</td>
+              <td align="right"></td>
+              <td align="right"></td>
+              <td align="right"></td>
+              <td align="right"></td>
+              <td align="right"></td>
+            </tr>
+            <tr>
+              <td align="left">Windows Phone</td>
+              <td align="right">8.1</td>
+              <td align="right">8.1</td>
+              <td align="right">8.1</td>
+              <td align="right"></td>
+              <td align="right"></td>
+              <td align="right"></td>
+              <td align="right"></td>
+              <td align="right"></td>
+            </tr>
+            <tr>
+              <td align="left">Windows Phone Silverlight</td>
+              <td align="right">8.0</td>
+              <td align="right"></td>
+              <td align="right"></td>
+              <td align="right"></td>
+              <td align="right"></td>
+              <td align="right"></td>
+              <td align="right"></td>
+              <td align="right"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p><a href="https://github.com/dotnet/standard/blob/master/docs/versions.md">github.com/dotnet/standard/blob/master/docs/versions.md</a></p>
+      </section>
+      <section data-transition="convex-in none-out">
+        <img src="img/netstds.png" />
+      </section>
+      <section data-transition="none-in none-out">
+        <img src="img/netstds-breaking.png" />
+      </section>
+      <section data-transition="none-in convex-out">
+        <img src="img/netstds.png" />
+      </section>
+      <section>
+        <img src="img/netstd-diff.png" />
+        <p><a href="https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.4_diff.md">github.com/dotnet/standard/blob/master/docs/versions/netstandard1.4_diff.md</a></p>
+      </section>
+      <section>
+        <h2>Package</h2>
+        <img src="img/netstd-compilation.png" />
+        <p class="handle">Immo Landwerth @terrajobst</p>
+      </section>
+      <section>
+        <h2>Application</h2>
+        <img class="img-white-back" src="img/ref-netstd.png" />
+        <p class="handle">Immo Landwerth @terrajobst</p>
+      </section>
+      <section>
+        <table>
+          <thead>
+            <tr>
+              <th align="left">.NET Standard</th>
+              <th align="right"><a href="https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.0.md">1.0</a></th>
+              <th align="right"><a href="https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.1.md">1.1</a></th>
+              <th align="right"><a href="https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.2.md">1.2</a></th>
+              <th align="right"><a href="https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.3.md">1.3</a></th>
+              <th align="right"><a href="https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.4.md">1.4</a></th>
+              <th align="right"><a href="https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.5.md">1.5</a></th>
+              <th align="right"><a href="https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.6.md">1.6</a></th>
+              <th align="right"><a href="https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md">2.0</a></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="left">.NET Core</td>
+              <td align="right">1.0</td>
+              <td align="right">1.0</td>
+              <td align="right">1.0</td>
+              <td align="right">1.0</td>
+              <td align="right">1.0</td>
+              <td align="right">1.0</td>
+              <td align="right">1.0</td>
+              <td align="right">2.0</td>
+            </tr>
+            <tr>
+              <td align="left">.NET Framework</td>
+              <td align="right">4.5</td>
+              <td align="right">4.5</td>
+              <td align="right">4.5.1</td>
+              <td align="right">4.6</td>
+              <td align="right">4.6.1</td>
+              <td align="right">4.6.1</td>
+              <td align="right">4.6.1</td>
+              <td align="right">4.6.1</td>
+            </tr>
+            <tr>
+              <td align="left">Mono</td>
+              <td align="right">4.6</td>
+              <td align="right">4.6</td>
+              <td align="right">4.6</td>
+              <td align="right">4.6</td>
+              <td align="right">4.6</td>
+              <td align="right">4.6</td>
+              <td align="right">4.6</td>
+              <td align="right">5.4</td>
+            </tr>
+            <tr>
+              <td align="left">Xamarin.iOS</td>
+              <td align="right">10.0</td>
+              <td align="right">10.0</td>
+              <td align="right">10.0</td>
+              <td align="right">10.0</td>
+              <td align="right">10.0</td>
+              <td align="right">10.0</td>
+              <td align="right">10.0</td>
+              <td align="right">10.14</td>
+            </tr>
+            <tr>
+              <td align="left">Xamarin.Mac</td>
+              <td align="right">3.0</td>
+              <td align="right">3.0</td>
+              <td align="right">3.0</td>
+              <td align="right">3.0</td>
+              <td align="right">3.0</td>
+              <td align="right">3.0</td>
+              <td align="right">3.0</td>
+              <td align="right">3.8</td>
+            </tr>
+            <tr>
+              <td align="left">Xamarin.Android</td>
+              <td align="right">7.0</td>
+              <td align="right">7.0</td>
+              <td align="right">7.0</td>
+              <td align="right">7.0</td>
+              <td align="right">7.0</td>
+              <td align="right">7.0</td>
+              <td align="right">7.0</td>
+              <td align="right">8.0</td>
+            </tr>
+            <tr>
+              <td align="left">UWP</td>
+              <td align="right">10.0</td>
+              <td align="right">10.0</td>
+              <td align="right">10.0</td>
+              <td align="right">10.0</td>
+              <td align="right">10.0</td>
+              <td align="right">vNext</td>
+              <td align="right">vNext</td>
+              <td align="right">vNext</td>
+            </tr>
+            <tr>
+              <td align="left">Windows</td>
+              <td align="right">8.0</td>
+              <td align="right">8.0</td>
+              <td align="right">8.1</td>
+              <td align="right"></td>
+              <td align="right"></td>
+              <td align="right"></td>
+              <td align="right"></td>
+              <td align="right"></td>
+            </tr>
+            <tr>
+              <td align="left">Windows Phone</td>
+              <td align="right">8.1</td>
+              <td align="right">8.1</td>
+              <td align="right">8.1</td>
+              <td align="right"></td>
+              <td align="right"></td>
+              <td align="right"></td>
+              <td align="right"></td>
+              <td align="right"></td>
+            </tr>
+            <tr>
+              <td align="left">Windows Phone Silverlight</td>
+              <td align="right">8.0</td>
+              <td align="right"></td>
+              <td align="right"></td>
+              <td align="right"></td>
+              <td align="right"></td>
+              <td align="right"></td>
+              <td align="right"></td>
+              <td align="right"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p><a href="https://github.com/dotnet/standard/blob/master/docs/versions.md">github.com/dotnet/standard/blob/master/docs/versions.md</a></p>
+      </section>
+      <section>
+        <h2>.NET Standard 1.x</h2>
+        <h3>Limitations</h3>
+        <h3>Paralysis</h3>
+      </section>
+      <section>
+        <img src="img/netstd-1.png" />
+      </section>
+      <section>
+        <img src="img/netstd-2.png" />
+      </section>
+      <section>
+        <img src="img/netstd-diff.png" />
+        <p><a href="https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.4_diff.md">github.com/dotnet/standard/blob/master/docs/versions/netstandard1.4_diff.md</a></p>
+      </section>
+      <section>
+        <h2>.NET Standard 1.6 → 2.0 diff</h2>
+        <img src="img/netstd-diff-2.0.png" />
+        <p><a href="https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0_diff.md">github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0_diff.md</a></p>
+      </section>
+      <section>
+        <h2>.NET Standard 1.x → 2.0</h2>
+        <h3>Limitations ✓</h3>
+        <h3>Paralysis</h3>
+      </section>
+      <section>
+        <h3>FakeItEasy</h3>
+        <h4>→ Castle.Core</h4>
+        <h3>NServiceBus.Rabbit</h3>
+        <h4>→ NServiceBus</h4>
+        <h4>→ RabbitMQ.Client</h4>
+        <h3>NServiceBus</h3>
+        <h4>→ Autofac</h4>
+        <h4>→ Newtonsoft.Json</h4>
+      </section>
+      <section>
+        <h2>Reference anything!</h2>
+      </section>
+      <section>
+        <h2>Package</h2>
+        <img src="img/ref-netfx.png" />
+        <p class="handle">Immo Landwerth @terrajobst</p>
+      </section>
+      <section data-transition="convex-in none-out">
+        <h2>Application</h2>
+        <img class="img-white-back" src="img/netstd-runtime.png" />
+      </section>
+      <section data-transition="none-in convex-out">
+        <h2>Application</h2>
+        <img class="img-white-back" src="img/netstd-runtime-x.png" />
+      </section>
+      <section>
+        <h2>Works on my machine!</h2>
+        <img src="img/pnse.png" />
+        <h3><a href="https://github.com/dotnet/corefx/wiki/ApiCompat">github.com/dotnet/corefx/wiki/ApiCompat</a></h3>
+      </section>
+      <section>
+        <h2>Try it</h2>
+        <h3>.NET Core 2.0</h3>
+        <div class="fragment">
+          <h3>Visual Studio 2017 15.3.x</h3>
+          <h3>Visual Studio for Mac 7.1.x</h3>
+          <h3>Visual Studio Code + C# Extension</h3>
+        </div>
+      </section>
+      <section>
+        <h2>Try it</h2>
+        <h3><a href="https://github.com/adamralph/netstandard-magic">github.com/adamralph/netstandard-magic</a></h3>
+        <h3><a href="https://github.com/adamralph/netcore-magic">github.com/adamralph/netcore-magic</a></h3>
+        <h3><a href="https://github.com/adamralph/no-magic">github.com/adamralph/no-magic</a></h3>
+      </section>
+      <section>
+        <h2>.NET Standard 1.x → 2.0</h2>
+        <h3>Limitations ✓</h3>
+        <h3>Paralysis ✓</h3>
+      </section>
+      <section>
+        <h2>.NET Standard 2.0</h2>
+        <h3>Moar APIs!</h3>
+        <h3>Reference anything!*</h3>
+      </section>
+      <section>
+        <h2>Port my package</h2>
+      </section>
+      <section>
+        <h2>Check compatibility</h2>
+        <h3><a href="https://github.com/Microsoft/dotnet-apiport">github.com/Microsoft/dotnet-apiport</a></h3>
+      </section>
+      <section data-transition="none-in none-out">
+        <img src="img/vs-analyse-portability.gif" />
+      </section>
+      <section data-transition="none-in convex-out">
+        <img src="img/cli-analyse-portability.gif" />
+      </section>
+      <section>
+        <table>
+          <thead>
+            <tr>
+              <th>Assembly</th>
+              <th>Target</th>
+              <th>.NET FX 4.5.2</th>
+              <th>.NET Std 1.6</th>
+              <th>.NET Std 2.0</th>
+            </tr>
+          </thead>
+          <tr>
+            <td>NServiceBus.Core</td>
+            <td>.NET FX 4.5.2</td>
+            <td>100%</td>
+            <td>66%</td>
+            <td>87%</td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <h2>What do I do?</h2>
+        <h3 class="fragment">Change</h3>
+        <h3 class="fragment">Separate</h3>
+        <h3 class="fragment">Remove</h3>
+      </section>
+      <section>
+        <h2>APIS and versions</h2>
+        <h3><a href="https://apisof.net/">apisof.net</a></h3>
+      </section>
+      <section data-transition="none-in convex-out">
+        <img src="img/api-catalog.gif" />
+      </section>
+      <section>
+        <h2>.NET Standard / .NET Core?</h2>
+        <h3>¯\_(ツ)_/¯</h3>
+      </section>
+      <section>
+        <table>
+          <thead>
+            <tr>
+              <th>Milestone</th>
+              <th>Release Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>.NET Standard 2.0 Preview</td>
+              <td>Q2 2017 (11th May!)</td>
+            </tr>
+            <tr>
+              <td>.NET Standard 2.0</td>
+              <td>Q3 2017 (14th August!)</td>
+            </tr>
+          </tbody>
+        </table>
+        <p><a href="https://github.com/dotnet/core/blob/master/roadmap.md#ship-dates">github.com/dotnet/core/blob/master/roadmap.md</a></p>
+      </section>
+      <section>
+        <table>
+          <thead>
+            <tr>
+              <th>Milestone</th>
+              <th>Release Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>.NET Core &amp; Standard 2.0 Preview</td>
+              <td>Q2 2017 (11th May!)</td>
+            </tr>
+            <tr>
+              <td>.NET Core &amp; Standard 2.0</td>
+              <td>Q3 2017 (14th August!)</td>
+            </tr>
+            <tr>
+              <td>UWP 6.0 (.NET Standard 2.0)</td>
+              <td>Q4 2017</td>
+            </tr>
+            <tr>
+              <td>.NET Core 2.1 Preview</td>
+              <td>Q4 2017</td>
+            </tr>
+            <tr>
+              <td>.NET Core 2.1</td>
+              <td>Q1 2018</td>
+            </tr>
+          </tbody>
+        </table>
+        <p><a href="https://github.com/dotnet/core/blob/master/roadmap.md#ship-dates">github.com/dotnet/core/blob/master/roadmap.md</a></p>
+      </section>
+      <section>
+        <img src="img/analogy.png" />
+        <p><a href="https://github.com/davidfowl/NetStandard">github.com/davidfowl/NetStandard</a></p>
+      </section>
+      <section>
+        <h2>.NET Standard 2.1, 2.2, 3.0?</h2>
+      </section>
+      <section>
+        <h2>How did I do?</h2>
+      </section>
+      <section>
+        <h3><a href="docs.particular.net/tutorials/intro-to-nservicebus">docs.particular.net/tutorials/intro-to-nservicebus</a></h3>
+        <h3><a href="https://particular.net/s/net-core-signup">particular.net/s/net-core-signup</a></h3>
+      </section>
+      <section>
+        <img src="img/tweet.png" />
+      </section>
+      <section>
+        <h1>What is .NET Standard?</h1>
+        <blockquote>It ain't your father's .NET!</blockquote>
+        <h3>Adam Ralph</h3>
+        <p>adam@adamralph.com · @adamralph (Twitter, GitHub, etc.)</p>
+        <p><a href="https://github.com/adamralph/netstandard-deck">github.com/adamralph/netstandard-deck</a></p>
+      </section>
+      <p class="handle">@adamralph</p>
+    </div>
+  </div>
+  <script src="js/reveal.js"></script>
+  <script>
+    Reveal.initialize({
+      transition: 'convex'
+    });
+  </script>
+
+</body>
+
+</html>
