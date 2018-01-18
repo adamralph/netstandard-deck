@@ -39,8 +39,8 @@
             <td><span class="fragment" data-fragment-index="1">.NET Standard 1.0</span></td>
           </tr>
           <tr>
-            <td>xBehave.net<span class="fragment" data-fragment-index="2"> (beta)</span></td>
-            <td><span class="fragment" data-fragment-index="3">.NET Standard 1.0</span></td>
+            <td>xBehave.net</td>
+            <td><span class="fragment" data-fragment-index="3">.NET Standard 1.1</span></td>
           </tr>
           <tr>
             <td>NServiceBus.RabbitMQ<span class="fragment" data-fragment-index="4"> (beta)</span></td>
@@ -54,11 +54,11 @@
       </section>
       <section>
         <h3>.NET Framework (and Mono)</h3>
-        <p class="fragment">Windows, Windows Server (and MacOS and Linux)</p>
+        <p class="fragment">Windows, Windows Server (and Mac and Linux)</p>
         <h3 class="fragment">.NET Core</h3>
-        <p class="fragment">Windows, Windows Server, Linux, MacOS, Tizen</p>
+        <p class="fragment">Windows, Windows Server, Linux, Mac, Tizen</p>
         <h3 class="fragment">Xamarin.iOS, Xamarin.Mac</h3>
-        <p class="fragment">iPhone, iPad, MacOS (GUI)</p>
+        <p class="fragment">iPhone, iPad, Mac (GUI)</p>
         <h3 class="fragment">Xamarin.Android</h3>
         <p class="fragment">All the things!</p>
         <h3 class="fragment">UWP</h3>
@@ -124,7 +124,7 @@
         <img src="img/netstd.png" />
       </section>
       <section>
-        <img src="img/netstd-1.png" />
+        <img src="img/netstd-2.png" />
       </section>
       <section>
         <img src="img/netstds.png" />
@@ -218,9 +218,9 @@
               <td align="right">10.0</td>
               <td align="right">10.0</td>
               <td align="right">10.0</td>
-              <td align="right">vNext</td>
-              <td align="right">vNext</td>
-              <td align="right">vNext</td>
+              <td align="right">vSilly</td>
+              <td align="right">vSilly</td>
+              <td align="right">vSilly</td>
             </tr>
             <tr>
               <td align="left">Windows</td>
@@ -275,12 +275,12 @@
       <section>
         <h2>Package</h2>
         <img src="img/netstd-compilation.png" />
-        <p class="handle">Immo Landwerth @terrajobst</p>
+        <p>Immo Landwerth @terrajobst</p>
       </section>
       <section>
         <h2>Application</h2>
         <img class="img-white-back" src="img/ref-netstd.png" />
-        <p class="handle">Immo Landwerth @terrajobst</p>
+        <p>Immo Landwerth @terrajobst</p>
       </section>
       <section>
         <table>
@@ -371,9 +371,9 @@
               <td align="right">10.0</td>
               <td align="right">10.0</td>
               <td align="right">10.0</td>
-              <td align="right">vNext</td>
-              <td align="right">vNext</td>
-              <td align="right">vNext</td>
+              <td align="right">vSilly</td>
+              <td align="right">vSilly</td>
+              <td align="right">vSilly</td>
             </tr>
             <tr>
               <td align="left">Windows</td>
@@ -417,10 +417,13 @@
         <h3>Limitations</h3>
         <h3>Paralysis</h3>
       </section>
-      <section>
+      <section data-transition="convex-in none-out">
+        <img src="img/netstd-2.png" />
+      </section>
+      <section data-transition="none-in none-out">
         <img src="img/netstd-1.png" />
       </section>
-      <section>
+      <section data-transition="none-in convex-out">
         <img src="img/netstd-2.png" />
       </section>
       <section>
@@ -439,13 +442,13 @@
       </section>
       <section>
         <h3>FakeItEasy</h3>
-        <h4>→ Castle.Core</h4>
-        <h3>NServiceBus.Rabbit</h3>
-        <h4>→ NServiceBus</h4>
-        <h4>→ RabbitMQ.Client</h4>
-        <h3>NServiceBus</h3>
-        <h4>→ Autofac</h4>
-        <h4>→ Newtonsoft.Json</h4>
+        <h4 class="fragment">→ Castle.Core</h4>
+        <h3 class="fragment">NServiceBus.Rabbit</h3>
+        <h4 class="fragment">→ NServiceBus</h4>
+        <h4 class="fragment">→ RabbitMQ.Client</h4>
+        <h3 class="fragment">NServiceBus</h3>
+        <h4 class="fragment">→ Autofac</h4>
+        <h4 class="fragment">→ Newtonsoft.Json</h4>
       </section>
       <section>
         <h2>Reference anything!</h2>
@@ -453,7 +456,7 @@
       <section>
         <h2>Package</h2>
         <img src="img/ref-netfx.png" />
-        <p class="handle">Immo Landwerth @terrajobst</p>
+        <p>Immo Landwerth @terrajobst</p>
       </section>
       <section data-transition="convex-in none-out">
         <h2>Application</h2>
@@ -464,16 +467,11 @@
         <img class="img-white-back" src="img/netstd-runtime-x.png" />
       </section>
       <section>
-        <h2>Works on my machine!</h2>
-        <img src="img/pnse.png" />
-        <h3><a href="https://github.com/dotnet/corefx/wiki/ApiCompat">github.com/dotnet/corefx/wiki/ApiCompat</a></h3>
-      </section>
-      <section>
         <h2>Try it</h2>
         <h3>.NET Core 2.0</h3>
         <div class="fragment">
-          <h3>Visual Studio 2017 15.3.x</h3>
-          <h3>Visual Studio for Mac 7.1.x</h3>
+          <h3>Visual Studio 2017 15.3.0</h3>
+          <h3>Visual Studio for Mac 7.1.0</h3>
           <h3>Visual Studio Code + C# Extension</h3>
         </div>
       </section>
@@ -540,6 +538,11 @@
         <img src="img/api-catalog.gif" />
       </section>
       <section>
+        <h2>Works on my machine!</h2>
+        <img src="img/pnse.png" />
+        <h3><a href="https://github.com/dotnet/corefx/wiki/ApiCompat">github.com/dotnet/corefx/wiki/ApiCompat</a></h3>
+      </section>
+      <section>
         <h2>.NET Standard / .NET Core?</h2>
         <h3>¯\_(ツ)_/¯</h3>
       </section>
@@ -582,16 +585,12 @@
               <td>Q3 2017 (14th August!)</td>
             </tr>
             <tr>
-              <td>UWP 6.0 (.NET Standard 2.0)</td>
-              <td>Q4 2017</td>
-            </tr>
-            <tr>
               <td>.NET Core 2.1 Preview</td>
-              <td>Q4 2017</td>
+              <td><del>Q4 2017</del> Q1 2018</td>
             </tr>
             <tr>
               <td>.NET Core 2.1</td>
-              <td>Q1 2018</td>
+              <td><del>Q1 2018</del> Q2 2018</td>
             </tr>
           </tbody>
         </table>
@@ -608,7 +607,7 @@
         <h2>How did I do?</h2>
       </section>
       <section>
-        <h3><a href="docs.particular.net/tutorials/intro-to-nservicebus">docs.particular.net/tutorials/intro-to-nservicebus</a></h3>
+        <h3><a href="https://docs.particular.net/tutorials/intro-to-nservicebus">docs.particular.net/tutorials/intro-to-nservicebus</a></h3>
         <h3><a href="https://particular.net/s/net-core-signup">particular.net/s/net-core-signup</a></h3>
       </section>
       <section>
