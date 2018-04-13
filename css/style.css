@@ -86,7 +86,7 @@ table {
   float: right;
   font-size: 1em;
   position: relative;
-  left: 100px;
+  left: 196px;
   top: -50px;
 }
 
@@ -104,4 +104,8 @@ table {
 
 img.img-white-back {
   background: white;
+}
+
+#img-conf {
+  width: 100%;
 }
